@@ -1,6 +1,6 @@
 Feature: tfl_journey_plan
 
-@test1
+@tfltest1
 Scenario: Plan a valid journey using tfl website
 	Given I naviagte to tfl homepage
 	And I clicked on the journey planner
@@ -18,7 +18,7 @@ Scenario: Plan an invalid journey using tfl website
 	When I click plan my journey
 	Then the result should display the planned journey
 
-@test3
+@tfltest3
 Scenario: Plan an empty journey using tfl website
 	Given I naviagte to tfl homepage
 	And I clicked on the journey planner
@@ -27,7 +27,7 @@ Scenario: Plan an empty journey using tfl website
 	When I click plan my journey
 	Then the result should display the field is required
 
-@test4
+@tfltest4
 Scenario: Plan a journey using the arrival time
 	Given I naviagte to tfl homepage
 	And I clicked on the journey planner
@@ -37,7 +37,7 @@ Scenario: Plan a journey using the arrival time
 	When I click plan my journey
 	Then the result should display the journey information based on arrival time
 
-@test5
+@tfltest5
 Scenario: Edit a plan journey 
 	Given I naviagte to tfl homepage
 	And I clicked on the journey planner
@@ -51,7 +51,7 @@ Scenario: Edit a plan journey
 	And I click update journey 
 	Then the result should display the newly updated journey information
 
-@test6
+@tfltest6
 Scenario: View the recent plan journey 
 	Given I naviagte to tfl homepage
 	And I clicked on the journey planner
